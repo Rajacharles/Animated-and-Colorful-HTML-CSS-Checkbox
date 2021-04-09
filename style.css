@@ -1,0 +1,64 @@
+*{
+  transition: all 0.2s cubic-bezier(0, 1.05, 0.72, 1.07);
+}
+
+body{
+  background-color: #222;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+}
+
+body .container{
+  width: 336px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .button{
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  box-shadow: 0 0 0 4px #e5e5e5 inset;
+}
+
+.container .button:hover{
+  cursor: pointer;
+  box-shadow: 0 0 0 4px #d8d8d8 inset;
+}
+
+.blue{
+  box-shadow: 0 0 0 24px #0077ff inset !important;
+}
+
+.red{
+  box-shadow: 0 0 0 24px #ff2a2a inset !important;
+}
+
+.green{
+  box-shadow: 0 0 0 24px #a3dd10 inset !important;
+}
+
+.purple{
+  box-shadow: 0 0 0 24px #ba0cff inset !important;
+}
+
+.orange{
+  box-shadow: 0 0 0 24px #ffbb00 inset !important;
+}
+
+.check{
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition-delay: 0.2s;
+  background: url(check.png) center no-repeat;
+}
+
+.check-mate{
+  transform:scale(1) !important;
+}
